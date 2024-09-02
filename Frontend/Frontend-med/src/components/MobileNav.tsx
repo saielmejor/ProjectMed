@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -24,7 +23,7 @@ import MobileNavLinks from "./MobileNavLinks";
 export default function MobileNav() {
   const { isAuthenticated, loginWithRedirect, user } = useAuth0();
   return (
-    <Sheet>
+    <Sheet >
       <SheetTrigger>
         <Menu></Menu>
       </SheetTrigger>
@@ -37,13 +36,13 @@ export default function MobileNav() {
                 {user?.email}{" "}
               </span>
             ) : (
-              <span> Welcome to MedBill</span>
+              <span> Hello MedBill</span>
             )}
           </SheetTitle>
-          <SheetDescription className=" justify-between"> {isAuthenticated ? (
+          <SheetDescription > {isAuthenticated ? (
              <MobileNavLinks/>
             ) : (
-              <Button onClick={()=>{loginWithRedirect()}} className="flex-1 font-bold text-blue-500">Log in </Button>
+              <Button onClick={()=>{loginWithRedirect()}} className="flex-1 font-bold text-[#c3c0df]">Log in </Button>
             )}</SheetDescription>
         </SheetHeader>
       </SheetContent>

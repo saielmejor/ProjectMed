@@ -1,5 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import React from "react";
+
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
@@ -11,19 +11,19 @@ export default function MobileNavLinks() {
         {" "}
         <Link
           to="/"
-          className="flex items-center font-bold text-xl text-blue-300 mt-2"
+          className="flex items-center font-bold text-xl text-[#c3c0df] mt-2"
         >
           Home
         </Link>
         <Link
           to="/dashboard"
-          className="flex items-center text-xl font-bold text-blue-300 mt-2"
+          className="flex items-center text-xl font-bold text-[#c3c0df] mt-2"
         >
-          Dashbaord
+          Dashboard
         </Link>
         <Link
           to="/manage-claims"
-          className="flex items-center text-xl  font-bold text-blue-300 mt-2 mb-5"
+          className="flex items-center text-xl  font-bold text-[#c3c0df] mt-2 mb-5"
         >
           {" "}
           Manage Claims

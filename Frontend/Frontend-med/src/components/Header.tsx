@@ -11,10 +11,12 @@ export default function Header() {
         <Link to="/" className="text-3xl font-bold tracking-tight ">
           ProjectMed.com
         </Link>
-        <div className="md:hidden"> 
+        <div className="md:hidden">  
           <MobileNav></MobileNav>
         </div>
-        <div className="hidden md:block"><MainNav/> </div>
+        <div className="hidden md:block">
+          
+          <MainNav/> </div>
       </div>
       
     </div>
